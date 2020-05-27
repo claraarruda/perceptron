@@ -76,6 +76,7 @@ class Perceptron:
         #para cada atributo...
         for i in range(self.n_attributes + 1):
             u+= self.weight[i] * sample[i]
+            # Multiplicar amostra e seu peso e também somar com o potencial que já tinha
 
         #obter a saida da rede considerando G a funçao sinal
         y = self.sinal(u)
